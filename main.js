@@ -23,9 +23,9 @@ function caesarEncrypt(message,shift){
         }
         return result
 }
-const secretMessage = "Hellofriends"
-const encryptedmessage = caesarEncrypt(secretMessage, 2)
-console.log(secretMessage, encryptedmessage)
+const secretMessage = "GJSNHJYTJFHMTYMJWFSIYMJUQFSJYUQJFXJ"
+const encryptedmessage = caesarEncrypt(secretMessage, 0)
+console.log(secretMessage, encryptedmessage) //Från encryption funktionen
 
 function caesarDecrypt(encryptedmessage,shift){
     const charCodes = []
@@ -44,7 +44,11 @@ result = result + String.fromCharCode(charCodes[i])
 }
 return result
         }
-        const decryptedmessage = caesarDecrypt(encryptedmessage, 2)
-console.log(secretMessage, decryptedmessage)
+        const decryptedmessage = caesarDecrypt(encryptedmessage, 5)
+console.log(secretMessage, decryptedmessage) //decryption funktionen
 //const decryptedmessage = caesarDecrypt()
 //console.log(encryptedmessage, decryptedmessage)
+
+
+//Fördjupning 
+//GJSNHJYTJFHMTYMJWFSIYMJUQFSJYUQJFXJ blir BENICETOEACHOTHERANDTHEPLANETPLEASE
